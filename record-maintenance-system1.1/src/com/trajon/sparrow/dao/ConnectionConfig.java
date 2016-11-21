@@ -31,6 +31,9 @@ public class ConnectionConfig
 		{
 			if(!new File("resource/config.properties").exists())
 			{
+				/*
+				It will create the file if not present in the resource folder. 
+				*/
 				configFile = new ConfigFile();
 			}
 			InputStream input = new FileInputStream("resource/config.properties");
