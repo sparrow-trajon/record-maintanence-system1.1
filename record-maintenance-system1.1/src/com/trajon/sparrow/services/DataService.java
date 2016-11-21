@@ -24,10 +24,13 @@ public class DataService
 		}
 		else
 		{
-			System.out.println("-------------------displaying the data------");
+			System.out.println("-------------------displaying the data-----------------");
 
-			emplist.forEach((action)->{System.out.println(action.getId()+"    " +action.getName()+"    "
-					+action.getGender()+"    " +action.getEmailAddress()+"    "+action.getName()   );});	
+			emplist.forEach((action)->{System.out.println(action.getId()+"    " +
+								      action.getName()+"    "+
+								      action.getGender()+"    " +
+								      action.getEmailAddress()+"    "+
+								      action.getName()   );});	
 		}
 
 	}
@@ -41,10 +44,13 @@ public class DataService
 		}
 		else
 		{
-			System.out.println("-------------------displaying the  "+  message+"-------------");
+			System.out.println("-------------------displaying the  "+  message+"-----------------");
 
-			emplist.forEach((action)->{System.out.println(action.getId()+"    " +action.getName()+"    "
-					+action.getGender()+"    " +action.getEmailAddress()+"    "+action.getName()   );});	
+			emplist.forEach((action)->{System.out.println(action.getId()+"    " +
+								      action.getName()+"    "+
+								      action.getGender()+"    " +
+								      action.getEmailAddress()+"    "+
+								      action.getName()   );});	
 		}
 
 	}
@@ -81,11 +87,12 @@ public class DataService
 			{
 				if(!nonDuplicatList.contains(action))
 				{
-					System.out.println(action.getId()+"    " +action.getName()+"    "
-							+action.getGender()+"    " +action.getEmailAddress()+"    "+action.getName()   );
-				}
-			}
-					));
+					System.out.println(action.getId()+"    " 
+							+action.getName()+"    "
+							+action.getGender()+"    " 
+							+action.getEmailAddress()+"    "
+							+action.getName()   );}
+			}));
 		}
 		else
 		{
@@ -107,7 +114,7 @@ public class DataService
 		}
 		else
 		{
-			logger.error("Error is :"+" list is empty");
+			logger.error("Error is :-"+" list is empty");
 		}
 	}
 
